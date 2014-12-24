@@ -45,6 +45,7 @@ define Package/unstrung/install
 		$(1)/etc/init.d \
 		$(1)/etc/config
 
+	$(INSTALL_BIN) ./files/sunshine.init $(1)/etc/init.d/sunshine
 	$(INSTALL_BIN) \
 		$(PKG_INSTALL_DIR)/sbin/sunshine \
 		$(1)/sbin/
