@@ -37,6 +37,7 @@ define Build/Configure
 	echo >${PKG_BUILD_DIR}/Makefile.local
 	echo CROSSFLAGS= >>${PKG_BUILD_DIR}/Makefile.local
 	echo EMBEDDED=openwrt >>${PKG_BUILD_DIR}/Makefile.local
+	echo USE_OBJDIR=true  >>${PKG_BUILD_DIR}/Makefile.local
 endef
 
 define Package/unstrung/install
